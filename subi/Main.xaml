@@ -1,0 +1,307 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="755.2,3556.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="668.8,3533.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="LoanData" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[LoanData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="635.2,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\subi0\OneDrive\OfficeMobile\Pictures\Desktop\nm.xlsx" />
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Loan Application Form" sap:VirtualizedContainerService.HintSize="635.2,3330.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="433d0f89-2f41-481c-8c55-9c1127ca473f" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,3090.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="EligibilityResult" />
+                <Variable x:TypeArguments="x:String" Name="LoanRate" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[LoanData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="568,3028.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="534.4,2838.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="433d0f89-2f41-481c-8c55-9c1127ca473f" Text="[CurrentRow(&quot;Name&quot;).ToString()]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="f79fd874-35f0-476f-9b61-3f24a3944ca9" ContentHash="cpZnacqlbUS-03gMeII9Mw" CvElementArea="812, 337, 315, 40" CvType="InputBox" DesignTimeRectangle="812, 337, 315, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="a7d85ab8-e99e-4e7a-bc3c-e287356ad2ea" InformativeScreenshot="6adc407294863a9a91c6d75bd6c558f3.png" Reference="9Z3WHjMa60u5nhk9-EUamQ/A44akQr_aEy-odyC79CrgA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Loan Application Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="f79fd874-35f0-476f-9b61-3f24a3944ca9" CvTextArea="941, 317, 33, 12" CvTextArgument="Name" CvType="Text" DesignTimeRectangle="941, 317, 33, 12" ElementType="Text" Guid="fcb97e66-82de-4455-a001-8b576e59d291" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Age'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="433d0f89-2f41-481c-8c55-9c1127ca473f" Text="[CurrentRow(&quot;Age&quot;).ToString()]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="38504795-0633-4147-b20c-d4fd924d09b5" ContentHash="iY7L6KwhzEqVq52iO0TA9w" CvElementArea="811, 412, 316, 41" CvType="InputBox" DesignTimeRectangle="811, 412, 315, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="1b71662f-b90f-4e65-b086-1b5bce405903" InformativeScreenshot="04dfe8faace590b35b4fdd3fa3c0d72e.png" Reference="9Z3WHjMa60u5nhk9-EUamQ/u0IUBxhCAk2F2ghFzeNUkw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Loan Application Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="38504795-0633-4147-b20c-d4fd924d09b5" CvTextArea="945, 392, 25, 13" CvTextArgument="Age" CvType="Text" DesignTimeRectangle="945, 392, 25, 13" ElementType="Text" Guid="bba7fba1-27b0-4fd6-a27b-86705cd89757" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Loan Amount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="433d0f89-2f41-481c-8c55-9c1127ca473f" Text="[CurrentRow(&quot;LoanAmount&quot;).ToString()]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="38504795-0633-4147-b20c-d4fd924d09b5" ContentHash="dTNc_3nYKUOEr5tsop3cMA" CvElementArea="812, 487, 315, 39" CvType="InputBox" DesignTimeRectangle="812, 487, 315, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="8dbdc49d-1173-4f92-991b-fffe573ba8b1" InformativeScreenshot="d848f7af086c1c44c71794fc3341a918.png" Reference="9Z3WHjMa60u5nhk9-EUamQ/RWRXKYGNp0CHyCVjlolSLA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Loan Application Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="38504795-0633-4147-b20c-d4fd924d09b5" CvTextArea="920, 467, 76, 12" CvTextArgument="Loan Amount" CvType="Text" DesignTimeRectangle="920, 467, 76, 12" ElementType="Text" Guid="0e0cabee-5f8a-47bd-9211-419fe95f8d85" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Phone Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="433d0f89-2f41-481c-8c55-9c1127ca473f" Text="[CurrentRow(&quot;PhoneNumber&quot;).ToString()]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="38504795-0633-4147-b20c-d4fd924d09b5" ContentHash="5zPk_nOo1U-7wpsGEHJKqA" CvElementArea="811, 562, 315, 39" CvType="InputBox" DesignTimeRectangle="811, 562, 315, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="2d394493-4ea4-41ce-802c-543d215b8563" InformativeScreenshot="1a187f84b1395fd8389e44de3383cdbe.png" Reference="9Z3WHjMa60u5nhk9-EUamQ/fpu77DNRY0WZzEStLFRMMA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Loan Application Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="38504795-0633-4147-b20c-d4fd924d09b5" CvTextArea="916, 542, 85, 12" CvTextArgument="Phone Number" CvType="Text" DesignTimeRectangle="916, 542, 85, 12" ElementType="Text" Guid="60d1b1d5-2a03-4dc0-a515-f1d3a5903ce2" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" ScopeIdentifier="433d0f89-2f41-481c-8c55-9c1127ca473f" Text="[CurrentRow(&quot;Email&quot;).ToString()]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="38504795-0633-4147-b20c-d4fd924d09b5" ContentHash="R3_xlUwSdEG5TyeK8MFfiQ" CvElementArea="812, 637, 315, 39" CvType="InputBox" DesignTimeRectangle="812, 637, 315, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="eaded611-2349-41ef-acb9-1f333f075960" InformativeScreenshot="6494bea6c519d56a4718a76073d40e03.png" Reference="9Z3WHjMa60u5nhk9-EUamQ/humRK_yf9UGCxs5mZo01mw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Loan Application Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="38504795-0633-4147-b20c-d4fd924d09b5" CvTextArea="941, 617, 32, 12" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="941, 617, 32, 12" ElementType="Text" Guid="2c77c4fe-4f4b-4375-8d4b-9d490e527e82" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Annual Income'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="433d0f89-2f41-481c-8c55-9c1127ca473f" Text="[CurrentRow(&quot;AnnualIncome&quot;).ToString()]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="38504795-0633-4147-b20c-d4fd924d09b5" ContentHash="Gz-myIP1A0SoEzCCOn3oOg" CvElementArea="811, 712, 315, 40" CvType="InputBox" DesignTimeRectangle="811, 712, 315, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="3dbcb15d-20e5-4db9-a736-8e524b82848e" InformativeScreenshot="39c5d97acfb61277a94642f4b5059ee3.png" Reference="9Z3WHjMa60u5nhk9-EUamQ/17SxtK4ceE6xNQvPFYmQOg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Loan Application Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="38504795-0633-4147-b20c-d4fd924d09b5" CvTextArea="914, 692, 86, 12" CvTextArgument="Annual Income" CvType="Text" DesignTimeRectangle="914, 692, 86, 12" ElementType="Text" Guid="24dd10d4-59a8-4d42-b7d2-b777f5151c33" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="500.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="433d0f89-2f41-481c-8c55-9c1127ca473f" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="38504795-0633-4147-b20c-d4fd924d09b5" ContentHash="2ZaQGUqTfkK9q3uifkrvww" CvElementArea="811, 766, 294, 38" CvTextArea="935, 777, 47, 13" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="811, 766, 294, 38" DesignTimeScaleFactor="1.25" ElementType="Button" Guid="ee7ea82a-0096-4ec6-9e73-9aaeb6b32ebb" InformativeScreenshot="50262ffa7084697baa0f39f9d6fdf03a.png" Reference="9Z3WHjMa60u5nhk9-EUamQ/VGI0e6nn1ki6FGSe68zOwA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Loan Application Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Loan Application Form(1)" sap:VirtualizedContainerService.HintSize="500.8,1050.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="24631a99-fa13-45a4-ad10-9b703078ad90" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,810.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NGetText DisplayName="Get Text 'Loan Eligibility'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="24631a99-fa13-45a4-ad10-9b703078ad90" TextString="[EligibilityResult]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="" CVScreenId="ba5f35de-bb81-435c-88bb-1588b877d2a9" ContentHash="VEPN69quF06-7RHtKNhcCw" CvTextArea="870, 917, 175, 17" CvType="AnyWordGroup" DesignTimeRectangle="870, 917, 175, 17" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="2b061342-13a6-44b3-967c-c41b667855a9" InformativeScreenshot="e1c3fdb85a14f446b66d421deb456454.png" Reference="9Z3WHjMa60u5nhk9-EUamQ/Xwsa1_-zu0OFThYIZkfaKA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Loan Application Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CVScreenId="ba5f35de-bb81-435c-88bb-1588b877d2a9" CvTextArea="890, 880, 135, 22" CvTextArgument="Loan Eligibility" CvType="Text" DesignTimeRectangle="890, 880, 135, 22" ElementType="Text" Guid="71475da3-b81f-40b0-acbc-29a3ba3a2a2b" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                              </uix:NGetText>
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[CurrentRow("EligibilityStatus")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[EligibilityResult]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <uix:NGetText DisplayName="Get Text 'Loan Eligibility'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="24631a99-fa13-45a4-ad10-9b703078ad90" TextString="[LoanRate]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="" CVScreenId="7f786f1c-7119-469d-8d43-cd934c7e21ab" ContentHash="kdb8LtFbDEy7UxIO_oRs-g" CvTextArea="890, 949, 134, 15" CvType="AnyWordGroup" DesignTimeRectangle="890, 949, 134, 15" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="f610dd9d-7eeb-44c7-ac0b-f2db27c268e1" InformativeScreenshot="54df806edd9cd8831946692dfc97f914.png" Reference="9Z3WHjMa60u5nhk9-EUamQ/BsVSjeJpxkSiG2sYc3TaNg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Loan Application Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CVScreenId="7f786f1c-7119-469d-8d43-cd934c7e21ab" CvTextArea="890, 880, 135, 22" CvTextArgument="Loan Eligibility" CvType="Text" DesignTimeRectangle="890, 880, 135, 22" ElementType="Text" Guid="da757cde-f46e-4c6a-a455-e619d1f9c852" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                              </uix:NGetText>
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[CurrentRow("LoanRate")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[LoanRate]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="False" DataTable="[LoanData]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="433.6,140.8" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\subi0\OneDrive\OfficeMobile\Pictures\Desktop\nm - Copy.xlsx" />
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="XswaDKfzkEmfCVZrCE8vtA" IconBase64="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" InformativeScreenshot="234ce234b5d3792aad6b3c664e64e280.png" Reference="9Z3WHjMa60u5nhk9-EUamQ/P7RHdjGanE-I4m_IQOsl9Q" Selector="&lt;html app='chrome.exe' title='Loan Application Form' /&gt;" Title="Loan Application Form" Url="file:///C:/Users/subi0/OneDrive/OfficeMobile/Pictures/Desktop/loan.html" Version="V1" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="yEbGBt5EpEGnW5P6xvoe7g" IconBase64="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" InformativeScreenshot="85c5c9d10fdf26dd64ab16c3cd9ccfce.png" Reference="9Z3WHjMa60u5nhk9-EUamQ/ypfvtIt0BEuGfNRhuAd2mg" Selector="&lt;html app='chrome.exe' title='Loan Application Form' /&gt;" Title="Loan Application Form" Url="file:///C:/Users/subi0/OneDrive/OfficeMobile/Pictures/Desktop/loan.html" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
